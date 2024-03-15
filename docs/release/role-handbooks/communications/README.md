@@ -5,7 +5,7 @@ Welcome to the Cluster API Comms Team onboarding documentation!
 ## Overview
 
 - Familiarize yourself with the release process, following the order of priority:
-  - Reference the [release timeline](/docs/release/releases/) of the release cycle you are involved to understand the release process.s  - Walk through the [release note generation process](#create-pr-for-release-notes) and try to generate notes by yourself.
+  - Reference the [release timeline](../../releases/) of the release cycle you are involved to understand the release process.s  - Walk through the [release note generation process](#create-pr-for-release-notes) and try to generate notes by yourself.
   - Understand the release notes tool [code](https://github.com/kubernetes-sigs/cluster-api/tree/main/hack/tools/release). The release team is in charge of maintaining this tool and updating it to cover new cases or add new features.
 - Documentation familiarity::  - Explore project's [documentation](https://cluster-api.sigs.k8s.io/introduction) and start learning how to update and maintain it.
 - Communication channels:
@@ -185,7 +185,7 @@ We should inform at least the following providers via a new issue on their respe
 - Packet: <https://github.com/kubernetes-sigs/cluster-api-provider-packet/issues/new>
 - vSphere: <https://github.com/kubernetes-sigs/cluster-api-provider-vsphere/issues/new>
 
-To create GitHub issues at the Cluster API providers repositories and inform about a new minor beta release, use ["provider_issues.go"](/hack/tools/release/internal/update_providers/provider_issues.go) go utility.
+To create GitHub issues at the Cluster API providers repositories and inform about a new minor beta release, use ["provider_issues.go"](../../../../hack/tools/release/internal/update_providers/provider_issues.go) go utility.
 
-- Ensure that the [provider repos pre-requisites](/hack/tools/release/internal/update_providers/README.md#pre-requisites) are completed.
+- Ensure that the [provider repos pre-requisites](../../../../hack/tools/release/internal/update_providers/README.md#pre-requisites) are completed.
 - From the root of this repository, run `make release-provider-issues-tool` to create git issues at the provider repositories.
